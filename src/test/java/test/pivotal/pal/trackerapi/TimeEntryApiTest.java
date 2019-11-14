@@ -36,7 +36,6 @@ public class TimeEntryApiTest {
     private final long userId = 456L;
     private TimeEntry timeEntry = new TimeEntry(projectId, userId, LocalDate.parse("2017-01-08"), 8);
 
-
     @Before
     public void setUp() throws Exception {
         MysqlDataSource dataSource = new MysqlDataSource();
@@ -47,7 +46,6 @@ public class TimeEntryApiTest {
 
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
     }
-
 
     @Test
     public void testCreate() throws Exception {
